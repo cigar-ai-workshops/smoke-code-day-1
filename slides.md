@@ -17,21 +17,25 @@ src: ./slides/03-model-agnostic-apps.md
 ---
 
 ---
-src: ./slides/04-website.md
+src: ./slides/04-compare-models.md
 ---
 
 ---
-src: ./slides/05-ipad-app.md
+src: ./slides/05-website.md
 ---
 
 ---
-src: ./slides/06-android-app.md
+src: ./slides/06-ipad-app.md
 ---
 
 ---
-src: ./slides/07-claude-verticals.md
+src: ./slides/07-android-app.md
 ---
 
 ---
-src: ./slides/08-openai-verticals.md
+src: ./slides/08-claude-verticals.md
+---
+
+---
+src: ./slides/09-openai-verticals.md
 ---
