@@ -1,6 +1,6 @@
 ---
 layout: center
-transition: fade
+transition: slide-left
 ---
 
 # Sample Slide 2: Key Features

@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-up
+transition: slide-left
 ---
 
 # AI Subscriptions

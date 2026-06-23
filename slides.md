@@ -23,3 +23,11 @@ src: ./slides/04-ipad-app.md
 ---
 src: ./slides/05-android-app.md
 ---
+
+---
+src: ./slides/06-claude-verticals.md
+---
+
+---
+src: ./slides/07-openai-verticals.md
+---
