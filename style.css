@@ -1,0 +1,9 @@
+/* Hide the nav controls overlay in play mode */
+.slidev-slide-container > :not(.slidev-slide-content) {
+	display: none !important;
+}
+
+/* Hide nav controls bar in presenter mode */
+.slidev-presenter .grid-section.bottom nav {
+	display: none !important;
+}

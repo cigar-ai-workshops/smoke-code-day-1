@@ -12,6 +12,10 @@ npm run build    # static SPA build to dist/
 npm run export   # export to PDF/PNG
 ```
 
+## Critical rule
+
+**Always `git add` and `git commit` before running destructive commands like `git clean -fd`, `git reset --hard`, or `rm -rf`. Never use `git clean -fd` without first checking what it will delete with `git clean -fdn`.**
+
 ## Structure
 
 - `slides.md` — main entrypoint that includes all slides via `src: ./slides/NN-name.md`

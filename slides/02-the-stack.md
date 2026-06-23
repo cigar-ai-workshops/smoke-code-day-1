@@ -3,16 +3,14 @@ layout: default
 transition: slide-up
 ---
 
-# The stack
+# AI Subscriptions
 
-<small style="color: #ab9a81; font-size: 0.9rem;">our pick for tonight</small>
-
-| Tool | Role | Models | Best for | Since | Pricing |
-|------|------|-------|----------|-------|---------|
-| **Claude** | Design tool | Claude Opus / Sonnet | Design mockups from prompts | 2024 | Pro $17/mo |
-| **OpenCode** | Coding agent | Any — Claude, GPT, DeepSeek, local | Building your project from code | 2024 | Go $5/mo |
-| **VS Code** | Editor | — | Opening code, running terminals | 2015 | Free |
-| **GitHub** | Hosting | — | Pushing code, Pages deploy | 2008 | Free |
+| Link | Description | Platform |
+|------|-------------|----------|
+| [ChatGPT](https://chatgpt.com/) | OpenAI's flagship — GPT-5, reasoning, image gen, voice | Web, macOS, Win, iOS, Android |
+| [Claude](https://claude.ai) | Anthropic's assistant — long context, coding, safety-first | Web, macOS, iOS, Android |
+| [Gemini](https://gemini.google.com/app) | Google's multimodal — video, images, code, 1M context | Web, iOS, Android |
+| [Grok](https://grok.com/) | xAI's model — real-time web, X integration, conversational | Web, iOS, Android |
 
 <style>
 .slidev-layout h1 {
