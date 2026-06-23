@@ -1,9 +1,151 @@
-/* Hide the nav controls overlay in play mode */
-.slidev-slide-container > :not(.slidev-slide-content) {
-	display: none !important;
+/* ============================================================
+   Build with AI — shared deck theme (cigar + code)
+   Slidev auto-imports this file, so styles apply to every slide.
+   ============================================================ */
+
+:root {
+  --bwa-bg-0: #0f0c08;
+  --bwa-bg-1: #1a120a;
+  --bwa-bg-2: #241a10;
+  --bwa-amber: #e7a24c;
+  --bwa-amber-deep: #cf6f37;
+  --bwa-amber-soft: #d4873a;
+  --bwa-cream: #f2e7d3;
+  --bwa-muted: #ab9a81;
+  --bwa-line: rgba(255, 255, 255, 0.07);
 }
 
-/* Hide nav controls bar in presenter mode */
+/* --- Warm background on every content layout --- */
+.slidev-layout {
+  background: linear-gradient(160deg, var(--bwa-bg-0) 0%, var(--bwa-bg-1) 55%, var(--bwa-bg-2) 100%);
+  color: var(--bwa-cream);
+}
+
+/* --- Headings: amber gradient with an accent rule --- */
+.slidev-layout h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem !important;
+  background: linear-gradient(135deg, #f2e7d3 0%, #e7a24c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slidev-layout h1::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  margin-top: 0.6rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--bwa-amber) 0%, var(--bwa-amber-deep) 100%);
+}
+
+.slidev-layout h2 {
+  color: var(--bwa-cream);
+  font-weight: 600;
+}
+
+/* --- Kicker: the `// mono label` above a title --- */
+.kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--bwa-amber-soft);
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+  opacity: 0.85;
+  margin-bottom: 0.35rem;
+}
+
+/* --- Links --- */
+.slidev-layout a {
+  color: var(--bwa-amber);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(231, 162, 76, 0.25);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.slidev-layout a:hover {
+  color: var(--bwa-cream);
+  border-bottom-color: var(--bwa-amber);
+}
+
+/* --- Tables --- */
+.slidev-layout table {
+  font-size: 0.85rem;
+  width: 100%;
+  margin-top: 1.25rem;
+  border-collapse: collapse;
+}
+.slidev-layout th {
+  background: rgba(231, 162, 76, 0.12);
+  color: var(--bwa-amber);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.slidev-layout td,
+.slidev-layout th {
+  border-color: var(--bwa-line);
+  padding: 0.45rem 0.7rem;
+}
+.slidev-layout tr:hover td {
+  background: rgba(231, 162, 76, 0.05);
+}
+.slidev-layout td:first-child {
+  color: var(--bwa-amber);
+  font-weight: 500;
+}
+
+/* --- Blockquote --- */
+.slidev-layout blockquote {
+  border-left: 3px solid var(--bwa-amber);
+  background: rgba(231, 162, 76, 0.06);
+  color: var(--bwa-muted);
+  border-radius: 0 6px 6px 0;
+}
+
+/* --- Framed screenshots --- */
+.shot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  height: 68vh;
+}
+.shot img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid rgba(231, 162, 76, 0.18);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+}
+.shot .caption {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: var(--bwa-muted);
+  letter-spacing: 0.03em;
+}
+.shot .caption em {
+  color: var(--bwa-amber);
+  font-style: normal;
+}
+
+/* --- Slide number --- */
+.slidev-page > .slidev-layout {
+  position: relative;
+}
+
+/* ============================================================
+   Hide nav controls in play / presenter mode (original rules)
+   ============================================================ */
+.slidev-slide-container > :not(.slidev-slide-content) {
+  display: none !important;
+}
 .slidev-presenter .grid-section.bottom nav {
-	display: none !important;
+  display: none !important;
 }

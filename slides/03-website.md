@@ -3,8 +3,11 @@ layout: default
 transition: slide-left
 ---
 
-# Website
+<div class="kicker">// built with ai · live</div>
 
-<div style="display: flex; justify-content: center; align-items: center; height: 70vh;">
-  <img src="/images/cigar-and-code-website.png" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px;" />
+# The Website
+
+<div class="shot">
+  <img src="/images/cigar-and-code-website.png" />
+  <div class="caption">Cigar &amp; Code: <em>landing page</em>, shipped from a single prompt session</div>
 </div>
