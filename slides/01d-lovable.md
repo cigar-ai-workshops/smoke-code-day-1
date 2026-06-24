@@ -20,10 +20,11 @@ transition: slide-left
   margin: 0.5rem 0 0 0;
 }
 .lovable-info li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 6rem 11rem 1fr;
   align-items: baseline;
   gap: 0.75rem;
-  padding: 0.55rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid var(--bwa-line);
   font-size: 1rem;
   color: var(--bwa-muted);
@@ -68,7 +69,7 @@ transition: slide-left
 
 <div class="kicker">// vibe coding · lovable</div>
 
-# Lovable (ex-GPT Engineer)
+# <a href="https://lovable.dev" target="_blank" style="color:inherit;text-decoration:none;">Lovable</a> <span style="font-weight:400;font-size:1.1rem;color:var(--bwa-muted);">(ex-GPT Engineer)</span>
 
 <div class="lovable-grid">
   <div class="lovable-info">
@@ -101,6 +102,8 @@ transition: slide-left
     </ul>
   </div>
   <div class="lovable-img-wrap">
-    <img src="/images/lovaable-tacos.png" />
+    <a href="https://taco-treasure-shop.lovable.app" target="_blank">
+      <img src="/images/lovaable-tacos.png" />
+    </a>
   </div>
 </div>

@@ -1,111 +1,173 @@
 /* ============================================================
-   Build with AI — light professional theme
+   Build with AI — Monochrome keynote theme
+   Cream paper · near-black ink · dark-slate accent · Inter
    Slidev auto-imports this file, so styles apply to every slide.
    ============================================================ */
 
 :root {
-  --bwa-bg: #ffffff;
-  --bwa-bg-alt: #f8fafc;
-  --bwa-surface: #f1f5f9;
-  --bwa-primary: #1e3a8a;
-  --bwa-primary-light: #3b82f6;
-  --bwa-primary-soft: #93c5fd;
-  --bwa-text: #0f172a;
-  --bwa-muted: #64748b;
-  --bwa-line: #e2e8f0;
-  --bwa-accent: #2563eb;
-  --bwa-accent-soft: #dbeafe;
+  /* --- Surfaces (warm paper) --- */
+  --bwa-bg: #f7f1e6;          /* cream paper background */
+  --bwa-bg-alt: #f1e8d7;      /* slightly deeper cream */
+  --bwa-surface: #ece1cd;     /* card / panel surface */
+
+  /* --- Ink --- */
+  --bwa-primary: #1c1916;     /* near-black — display headings */
+  --bwa-text: #2b2620;        /* warm charcoal — body copy */
+  --bwa-muted: #837868;       /* warm gray — secondary text */
+  --bwa-line: #e1d4bd;        /* warm hairline */
+
+  /* --- Accent (dark slate, used sparingly) --- */
+  --bwa-accent: #3f4750;      /* dark slate — labels, links */
+  --bwa-accent-deep: #23272d; /* near-black slate (hover) */
+  --bwa-accent-soft: #e7ded0; /* soft neutral wash (badges) */
+  --bwa-gold: #a99a85;        /* neutral mid-gray for chart mids */
+
+  --slidev-theme-primary: var(--bwa-accent);
 }
 
-/* --- Clean white background on every content layout --- */
+/* ============================================================
+   Typography — Inter throughout
+   ============================================================ */
+.slidev-layout,
+.slidev-layout p,
+.slidev-layout li,
+.slidev-layout td,
+.slidev-layout th,
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv05' 1, 'ss01' 1;
+}
+
+/* ============================================================
+   Backgrounds
+   ============================================================ */
 .slidev-layout {
   background: var(--bwa-bg);
   color: var(--bwa-text);
+  padding: 3.2rem 3.5rem;
 }
 
-/* --- Headings: crisp dark with a clean accent rule --- */
+/* ============================================================
+   Headings — near-black, tight, confident
+   ============================================================ */
 .slidev-layout h1 {
   font-weight: 800;
-  letter-spacing: -0.03em;
-  margin-bottom: 0.25rem !important;
+  font-size: 3rem;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
   color: var(--bwa-primary);
+  margin-bottom: 0.4rem !important;
 }
 
+/* the old detached accent dash under every title is removed entirely */
 .slidev-layout h1::after {
-  content: "";
-  display: block;
-  width: 3rem;
-  height: 3px;
-  margin-top: 0.6rem;
-  border-radius: 2px;
-  background: var(--bwa-accent);
+  content: none;
 }
 
 .slidev-layout h2 {
+  color: var(--bwa-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.slidev-layout h3 {
+  color: var(--bwa-primary);
+  font-weight: 700;
+}
+
+.slidev-layout strong {
   color: var(--bwa-text);
   font-weight: 700;
 }
 
-/* --- Kicker: the `// mono label` above a title --- */
+/* ============================================================
+   Kicker — quiet mono eyebrow above a title
+   ============================================================ */
 .kicker {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--bwa-accent);
-  letter-spacing: 0.12em;
-  text-transform: lowercase;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.65rem;
+  opacity: 0.95;
 }
 
-/* --- Links --- */
+/* ============================================================
+   Links — distinguished by weight + underline, not loud color
+   ============================================================ */
 .slidev-layout a {
   color: var(--bwa-accent);
+  font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.15s ease;
+  border-bottom: 1px solid color-mix(in srgb, var(--bwa-accent) 35%, transparent);
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 .slidev-layout a:hover {
+  color: var(--bwa-accent-deep);
   border-bottom-color: var(--bwa-accent);
 }
 
-/* --- Tables --- */
+/* ============================================================
+   Tables — editorial, airy, hairline rules
+   ============================================================ */
 .slidev-layout table {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   width: 100%;
-  margin-top: 1.25rem;
+  margin-top: 1.6rem;
   border-collapse: collapse;
 }
-.slidev-layout th {
-  background: var(--bwa-accent-soft);
-  color: var(--bwa-primary);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.68rem;
-  letter-spacing: 0.06em;
-  text-align: left;
+.slidev-layout thead {
+  border-bottom: 1.5px solid var(--bwa-primary);
 }
-.slidev-layout td,
 .slidev-layout th {
+  background: transparent;
+  color: var(--bwa-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-align: left;
+  padding: 0.5rem 0.9rem 0.7rem;
+}
+.slidev-layout td {
   border-color: var(--bwa-line);
-  padding: 0.45rem 0.7rem;
+  padding: 0.72rem 0.9rem;
+  vertical-align: top;
+  color: var(--bwa-text);
+}
+.slidev-layout tbody tr {
+  border-bottom: 1px solid var(--bwa-line);
+}
+.slidev-layout tbody tr:last-child {
+  border-bottom: none;
 }
 .slidev-layout tr:hover td {
-  background: var(--bwa-bg-alt);
+  background: color-mix(in srgb, var(--bwa-surface) 60%, transparent);
 }
 .slidev-layout td:first-child {
   color: var(--bwa-accent);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
-/* --- Blockquote --- */
+/* ============================================================
+   Blockquote
+   ============================================================ */
 .slidev-layout blockquote {
   border-left: 3px solid var(--bwa-accent);
   background: var(--bwa-bg-alt);
-  color: var(--bwa-muted);
-  border-radius: 0 6px 6px 0;
+  color: var(--bwa-text);
+  border-radius: 0 8px 8px 0;
 }
 
-/* --- Framed screenshots --- */
+/* ============================================================
+   Framed screenshots
+   ============================================================ */
 .shot {
   display: flex;
   flex-direction: column;
@@ -119,23 +181,24 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid var(--bwa-line);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 50px -12px rgba(28, 25, 22, 0.28);
 }
 .shot .caption {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--bwa-muted);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 .shot .caption em {
   color: var(--bwa-accent);
   font-style: normal;
+  font-weight: 600;
 }
 
 /* ============================================================
-   Hide nav controls in play / presenter mode (original rules)
+   Hide nav controls in play / presenter mode
    ============================================================ */
 .slidev-slide-container > :not(.slidev-slide-content) {
   display: none !important;

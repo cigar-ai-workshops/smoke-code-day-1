@@ -6,7 +6,7 @@
 
 Built-in theme classes: `text-primary`, `bg-primary`, `border-primary`, `text-main`, `bg-main`.
 
-> **Theme updated June 24, 2026** — Switched from dark amber to light professional palette (navy/blue on white). See CSS variables below.
+> **Theme updated June 24, 2026** — Monochrome keynote palette: cream paper, near-black ink, dark-slate accent used sparingly. Inter for headings and body, JetBrains Mono for labels. See CSS variables below.
 
 ## Quick start
 
@@ -99,17 +99,20 @@ Common layouts:
 Edit these in `:root` to change the theme palette:
 
 ```css
---bwa-bg        #ffffff    main background
---bwa-bg-alt    #f8fafc    alternate background
---bwa-surface   #f1f5f9    card surfaces, table hover
---bwa-primary   #1e3a8a    deep navy brand
---bwa-accent    #2563eb    links, highlights, borders
---bwa-primary-light #3b82f6 lighter blue accent
---bwa-text      #0f172a    primary text
---bwa-muted     #64748b    secondary text
---bwa-line      #e2e8f0    table/border lines
---bwa-accent-soft #dbeafe  soft blue background (th, badges)
+--bwa-bg          #f7f1e6   cream paper background
+--bwa-bg-alt      #f1e8d7   slightly deeper cream
+--bwa-surface     #ece1cd   card / panel surface
+--bwa-primary     #1c1916   near-black — display headings
+--bwa-text        #2b2620   warm charcoal — body copy
+--bwa-muted       #837868   warm gray — secondary text
+--bwa-line        #e1d4bd   warm hairline
+--bwa-accent      #3f4750   dark slate — labels, links
+--bwa-accent-deep #23272d   near-black slate (hover)
+--bwa-accent-soft #e7ded0   soft neutral wash (badges)
+--bwa-gold        #a99a85   neutral mid-gray (chart mids)
 ```
+
+Fonts are loaded via the `fonts:` block in `slides.md` headmatter (Google provider): **Inter** (headings + body), **JetBrains Mono** (labels/kicker/terminal).
 
 ### Custom classes
 

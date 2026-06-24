@@ -4,3 +4,6 @@ dist/
 .env*
 *.pem
 /videos/
+
+# Personal profile slide — keep out of version control
+/slides/99-whoami.md

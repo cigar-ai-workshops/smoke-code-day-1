@@ -27,63 +27,81 @@ transition: slide-left
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
   color: #fff !important;
 }
-.invest-preview {
+.invest-chart {
+  margin-top: 1.75rem;
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 880px;
 }
-.invest-preview .bar-group {
-  flex: 1;
-}
-.invest-preview .bar-label-sm {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
-  color: var(--bwa-muted);
-  margin-bottom: 0.25rem;
-}
-.invest-preview .bar-sm {
-  height: 28px;
-  border-radius: 6px;
-  display: flex;
+.invest-row {
+  display: grid;
+  grid-template-columns: 11rem 1fr 5.5rem;
   align-items: center;
-  padding-left: 10px;
-  font-size: 0.8rem;
-  font-weight: 700;
+  gap: 1rem;
 }
-.invest-preview .bar-sm.hist { background: linear-gradient(90deg, #94a3b8, #64748b); color: #fff; }
-.invest-preview .bar-sm.tech { background: linear-gradient(90deg, #64748b, #475569); color: #fff; }
-.invest-preview .bar-sm.ai   { background: linear-gradient(90deg, var(--bwa-accent), var(--bwa-primary)); color: #fff; }
-.bar-sm .bar-val { margin-left: auto; padding-right: 10px; }
+.invest-row .ir-label {
+  font-size: 0.92rem;
+  color: var(--bwa-text);
+  text-align: right;
+  white-space: nowrap;
+}
+.invest-row .ir-track {
+  height: 16px;
+  background: var(--bwa-surface);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.invest-row .ir-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+.invest-row .ir-fill.hist { background: var(--bwa-muted); }
+.invest-row .ir-fill.tech { background: var(--bwa-muted); }
+.invest-row .ir-fill.ai   { background: linear-gradient(90deg, var(--bwa-accent), var(--bwa-accent-deep)); }
+.invest-row .ir-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--bwa-muted);
+  text-align: left;
+}
+.invest-row.is-ai .ir-label { font-weight: 700; color: var(--bwa-primary); }
+.invest-row.is-ai .ir-val { color: var(--bwa-accent); font-weight: 700; font-size: 0.95rem; }
 </style>
 
 <div class="kicker">// ai investment wave</div>
 
 # Just how big is AI investment?
 
-<p style="color: var(--bwa-muted); font-size: 1.1rem; max-width: 600px; margin-top: 1.2rem;">
+<p style="color: var(--bwa-text); opacity: 0.78; font-size: 1.1rem; max-width: 620px; margin-top: 1.1rem;">
   AI has already surpassed every historical tech milestone combined — and it's accelerating.
 </p>
 
-<div class="invest-preview">
-  <div class="bar-group">
-    <div class="bar-label-sm">Manhattan Project</div>
-    <div class="bar-sm hist" style="width:5%;">$30B</div>
+<div class="invest-chart">
+  <div class="invest-row">
+    <div class="ir-label">Manhattan Project</div>
+    <div class="ir-track"><div class="ir-fill hist" style="width:1.4%;"></div></div>
+    <div class="ir-val">$30B</div>
   </div>
-  <div class="bar-group">
-    <div class="bar-label-sm">Apollo Program</div>
-    <div class="bar-sm hist" style="width:15%;">$298B</div>
+  <div class="invest-row">
+    <div class="ir-label">Apollo Program</div>
+    <div class="ir-track"><div class="ir-fill hist" style="width:13.7%;"></div></div>
+    <div class="ir-val">$298B</div>
   </div>
-  <div class="bar-group">
-    <div class="bar-label-sm">VR &amp; AR</div>
-    <div class="bar-sm tech" style="width:10%;">~$140B</div>
+  <div class="invest-row">
+    <div class="ir-label">VR &amp; AR</div>
+    <div class="ir-track"><div class="ir-fill tech" style="width:6.4%;"></div></div>
+    <div class="ir-val">~$140B</div>
   </div>
-  <div class="bar-group">
-    <div class="bar-label-sm">Self-Driving Cars</div>
-    <div class="bar-sm tech" style="width:8%;">~$107B</div>
+  <div class="invest-row">
+    <div class="ir-label">Self-Driving Cars</div>
+    <div class="ir-track"><div class="ir-fill tech" style="width:4.9%;"></div></div>
+    <div class="ir-val">~$107B</div>
   </div>
-  <div class="bar-group">
-    <div class="bar-label-sm">AI 2013–2025</div>
-    <div class="bar-sm ai" style="width:80%;"><strong class="bar-val">$2.18T</strong></div>
+  <div class="invest-row is-ai">
+    <div class="ir-label">AI · 2013–2025</div>
+    <div class="ir-track"><div class="ir-fill ai" style="width:100%;"></div></div>
+    <div class="ir-val">$2.18T</div>
   </div>
 </div>
 

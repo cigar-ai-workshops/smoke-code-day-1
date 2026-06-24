@@ -20,10 +20,11 @@ transition: slide-left
   margin: 0.5rem 0 0 0;
 }
 .cursor-history li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 6rem 8.5rem 1fr;
   align-items: baseline;
-  gap: 0.6rem;
-  padding: 0.35rem 0;
+  gap: 0.7rem;
+  padding: 0.55rem 0;
   border-bottom: 1px solid var(--bwa-line);
   font-size: 0.9rem;
   color: var(--bwa-muted);

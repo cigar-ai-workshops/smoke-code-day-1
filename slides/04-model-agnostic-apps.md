@@ -5,7 +5,7 @@ transition: slide-left
 
 <div class="kicker">// model agnostic</div>
 
-# AI Coding
+# AI Coding Tools
 
 | Link | Description | Platform |
 |------|-------------|----------|

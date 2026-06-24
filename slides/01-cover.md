@@ -1,6 +1,6 @@
 ---
 layout: cover
-background: linear-gradient(160deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%)
+background: radial-gradient(120% 120% at 28% 18%, #fbf6ec 0%, #f4ecdb 55%, #ebdfc9 100%)
 class: text-center
 transition: slide-left
 ---
@@ -9,28 +9,41 @@ transition: slide-left
 .slidev-layout.cover {
   --slidev-theme-default-cover-font-size: 1rem;
 }
+.slidev-layout.cover h1 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 4.75rem !important;
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.04em;
+  color: var(--bwa-primary);
+  margin-bottom: 1rem !important;
+}
+.slidev-layout.cover h1::after { content: none; }
 .cover-tagline {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   color: var(--bwa-accent);
-  letter-spacing: 0.12em;
-  margin-bottom: 1.5rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
   font-weight: 600;
 }
 .cover-title {
-  font-size: 4.5rem !important;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 4.75rem !important;
   font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  margin-bottom: 0.75rem;
+  line-height: 1.0;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
   color: var(--bwa-primary);
 }
 .cover-desc {
-  font-size: 1.25rem;
-  color: var(--bwa-muted);
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--bwa-text);
+  opacity: 0.78;
+  max-width: 680px;
+  margin: 0 auto 2.25rem auto;
+  line-height: 1.65;
 }
 .cover-terminal {
   display: inline-flex;
@@ -44,7 +57,7 @@ transition: slide-left
   font-size: 1.15rem;
   margin-bottom: 2.5rem;
 }
-.cover-terminal .prompt { color: #059669; }
+.cover-terminal .prompt { color: var(--bwa-accent); }
 .cover-terminal .cmd { color: var(--bwa-text); }
 .cover-terminal .flag { color: var(--bwa-accent); }
 .cover-terminal .cursor {

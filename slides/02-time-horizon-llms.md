@@ -4,7 +4,9 @@ transition: slide-left
 ---
 
 <div class="shot" style="height:85vh; justify-content:flex-start; padding-top:0;">
-  <img src="/images/time-horizon-llms.png" />
+  <a href="https://metr.org/time-horizons/" target="_blank">
+    <img src="/images/time-horizon-llms.png" />
+  </a>
 </div>
 
 <!-- notes -->
