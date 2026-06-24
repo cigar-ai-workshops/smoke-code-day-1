@@ -1,5 +1,7 @@
 # Build with AI
 
+> Live: [cigar-and-code.github.io/smoke-code-day-1](https://cigar-and-code.github.io/smoke-code-day-1/)
+
 ## AI Subscriptions
 
 | Link | Description | Platform |
