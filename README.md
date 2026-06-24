@@ -2,6 +2,10 @@
 
 # Build with AI
 
+A field guide to AI coding tools and the models behind them — Claude Code, Codex, OpenCode, Gemini CLI, and more. Covers the landscape, tradeoffs, and practical workflow for picking the right tool.
+
+**June 24, 2026 — Pharr, Texas**
+
 ## AI Subscriptions
 
 | Link | Description | Platform |
