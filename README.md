@@ -15,6 +15,8 @@
 | Link | Description | Platform |
 |------|-------------|----------|
 | [VS Code](https://code.visualstudio.com/) | Microsoft's free, open-source code editor — extensions, Git, terminal, AI via Copilot | macOS, Win, Linux, Web |
+| [Claude Code](https://claude.ai/code) | Anthropic's agentic coding tool — terminal-first, long context, CLAUDE.md, skills | macOS, Win, Linux |
+| [Codex CLI](https://codex.openai.com/) | OpenAI's terminal-native coding agent — sandboxed, model-agnostic execution | macOS, Win, Linux |
 | [OpenCode](https://opencode.ai/) | Open-source coding agent — choose any model, terminal-first | macOS, Win, Linux |
 | [pi](https://pi.dev/) | Extensible coding agent — extensions, MCP, subagents | macOS, Linux |
 
