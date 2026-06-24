@@ -12,8 +12,8 @@ transition: slide-left
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--bwa-amber), var(--bwa-amber-deep));
-  color: #000 !important;
+  background: linear-gradient(135deg, var(--bwa-accent), var(--bwa-primary));
+  color: #fff !important;
   font-weight: 700;
   font-size: 1.1rem;
   padding: 0.85rem 1.8rem;
@@ -24,8 +24,8 @@ transition: slide-left
 }
 .open-btn-bottom:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(231, 162, 76, 0.3);
-  color: #000 !important;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+  color: #fff !important;
 }
 .invest-preview {
   display: flex;
@@ -50,11 +50,10 @@ transition: slide-left
   font-size: 0.8rem;
   font-weight: 700;
 }
-.invest-preview .bar-sm.hist { background: linear-gradient(90deg, var(--bwa-amber-muted, #b08a58), var(--bwa-amber-soft)); }
-.invest-preview .bar-sm.tech { background: linear-gradient(90deg, var(--bwa-amber-soft), var(--bwa-amber)); }
-.invest-preview .bar-sm.ai   { background: linear-gradient(90deg, var(--bwa-amber), var(--bwa-amber-deep)); }
-.invest-preview .bar-sm.ai strong { color: #000; }
-.bar-sm .bar-val { color: #000; margin-left: auto; padding-right: 10px; }
+.invest-preview .bar-sm.hist { background: linear-gradient(90deg, #94a3b8, #64748b); color: #fff; }
+.invest-preview .bar-sm.tech { background: linear-gradient(90deg, #64748b, #475569); color: #fff; }
+.invest-preview .bar-sm.ai   { background: linear-gradient(90deg, var(--bwa-accent), var(--bwa-primary)); color: #fff; }
+.bar-sm .bar-val { margin-left: auto; padding-right: 10px; }
 </style>
 
 <div class="kicker">// ai investment wave</div>

@@ -1,6 +1,6 @@
 ---
 layout: cover
-background: linear-gradient(160deg, #0f0c08 0%, #1a120a 50%, #241a10 100%)
+background: linear-gradient(160deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%)
 class: text-center
 transition: slide-left
 ---
@@ -12,49 +12,46 @@ transition: slide-left
 .cover-tagline {
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.1rem;
-  color: #d4873a;
+  color: var(--bwa-accent);
   letter-spacing: 0.12em;
   margin-bottom: 1.5rem;
-  opacity: 0.85;
+  font-weight: 600;
 }
 .cover-title {
   font-size: 4.5rem !important;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
-  background: linear-gradient(135deg, #f2e7d3 0%, #e7a24c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--bwa-primary);
 }
 .cover-desc {
   font-size: 1.25rem;
-  color: #ab9a81;
+  color: var(--bwa-muted);
   max-width: 700px;
   margin: 0 auto 2rem auto;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .cover-terminal {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: rgba(0,0,0,0.4);
-  border: 1px solid rgba(231,162,76,0.2);
+  background: var(--bwa-bg-alt);
+  border: 1px solid var(--bwa-line);
   border-radius: 10px;
   padding: 0.75rem 1.25rem;
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.15rem;
   margin-bottom: 2.5rem;
 }
-.cover-terminal .prompt { color: #9bb56e; }
-.cover-terminal .cmd { color: #f2e7d3; }
-.cover-terminal .flag { color: #cf6f37; }
+.cover-terminal .prompt { color: #059669; }
+.cover-terminal .cmd { color: var(--bwa-text); }
+.cover-terminal .flag { color: var(--bwa-accent); }
 .cover-terminal .cursor {
   display: inline-block;
   width: 10px;
   height: 1.3rem;
-  background: #e7a24c;
+  background: var(--bwa-accent);
   animation: blink 1.1s step-end infinite;
   margin-left: 2px;
 }
@@ -65,13 +62,13 @@ transition: slide-left
 .cover-footer {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.9rem;
-  color: #ab9a81;
+  color: var(--bwa-muted);
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-top: 1rem;
 }
-.cover-footer em { color: #e7a24c; font-style: normal; }
+.cover-footer em { color: var(--bwa-accent); font-style: normal; }
 </style>
 
 <div class="cover-tagline">// the valley builds with ai</div>

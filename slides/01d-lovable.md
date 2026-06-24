@@ -24,7 +24,7 @@ transition: slide-left
   align-items: baseline;
   gap: 0.75rem;
   padding: 0.55rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--bwa-line);
   font-size: 1rem;
   color: var(--bwa-muted);
 }
@@ -34,13 +34,13 @@ transition: slide-left
 .lovable-info .l-date {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
-  color: var(--bwa-amber-soft);
+  color: var(--bwa-accent);
   white-space: nowrap;
   min-width: 5.5rem;
 }
 .lovable-info .l-label {
   font-weight: 700;
-  color: var(--bwa-cream);
+  color: var(--bwa-text);
 }
 .lovable-info .l-note {
   font-size: 0.85rem;
@@ -61,8 +61,8 @@ transition: slide-left
   width: auto;
   height: auto;
   border-radius: 10px;
-  border: 1px solid rgba(231, 162, 76, 0.18);
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--bwa-line);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 </style>
 
@@ -96,7 +96,7 @@ transition: slide-left
       <li>
         <span class="l-date">GitHub</span>
         <span class="l-label">50K+ stars</span>
-        <span class="l-note"><a href="https://github.com/gpt-engineer-org/gpt-engineer" target="_blank" style="color:var(--bwa-amber);">github.com/gpt-engineer-org/gpt-engineer</a></span>
+        <span class="l-note"><a href="https://github.com/gpt-engineer-org/gpt-engineer" target="_blank" style="color:var(--bwa-accent);">github.com/gpt-engineer-org/gpt-engineer</a></span>
       </li>
     </ul>
   </div>

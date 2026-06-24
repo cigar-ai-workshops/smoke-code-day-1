@@ -10,13 +10,13 @@ transition: slide-left
   line-height: 1.75;
   max-width: 640px;
   padding: 1.2rem 1.5rem;
-  background: rgba(231, 162, 76, 0.05);
-  border-left: 3px solid var(--bwa-amber);
+  background: var(--bwa-bg-alt);
+  border-left: 3px solid var(--bwa-accent);
   border-radius: 0 10px 10px 0;
   margin: 1rem 0 2.5rem;
 }
 .v-intro strong {
-  color: var(--bwa-cream);
+  color: var(--bwa-text);
   font-weight: 600;
 }
 .v-cards {
@@ -29,34 +29,34 @@ transition: slide-left
   flex-direction: column;
   align-items: flex-start;
   gap: 0.6rem;
-  background: rgba(231, 162, 76, 0.06);
-  border: 1px solid rgba(231, 162, 76, 0.15);
+  background: var(--bwa-bg-alt);
+  border: 1px solid var(--bwa-line);
   border-radius: 14px;
   padding: 1.6rem 1.8rem;
   text-decoration: none !important;
-  border-bottom: 1px solid rgba(231, 162, 76, 0.15) !important;
+  border-bottom: 1px solid var(--bwa-line) !important;
   transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
 }
 .v-card:hover {
-  background: rgba(231, 162, 76, 0.1);
-  border-color: rgba(231, 162, 76, 0.35) !important;
+  background: var(--bwa-surface);
+  border-color: var(--bwa-accent) !important;
   transform: translateY(-2px);
 }
 .v-card .v-label {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--bwa-cream);
+  color: var(--bwa-text);
   letter-spacing: -0.01em;
 }
 .v-card .v-url {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.82rem;
-  color: var(--bwa-amber-soft);
+  color: var(--bwa-accent);
   opacity: 0.85;
 }
 .v-card .v-arrow {
   font-size: 1.1rem;
-  color: var(--bwa-amber);
+  color: var(--bwa-accent);
   margin-top: auto;
   align-self: flex-end;
   transition: transform 0.2s ease;
@@ -72,8 +72,8 @@ transition: slide-left
   letter-spacing: 0.08em;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
-  background: rgba(231, 162, 76, 0.12);
-  color: var(--bwa-amber-soft);
+  background: var(--bwa-accent-soft);
+  color: var(--bwa-accent);
   margin-bottom: 0.1rem;
 }
 </style>

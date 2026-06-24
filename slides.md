@@ -1,6 +1,7 @@
 ---
 title: Build with AI.
 theme: default
+colorSchema: light
 transition: slide-left
 ---
 

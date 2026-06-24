@@ -24,7 +24,7 @@ transition: slide-left
   align-items: baseline;
   gap: 0.6rem;
   padding: 0.35rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--bwa-line);
   font-size: 0.9rem;
   color: var(--bwa-muted);
 }
@@ -34,13 +34,13 @@ transition: slide-left
 .cursor-history .val-date {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
-  color: var(--bwa-amber-soft);
+  color: var(--bwa-accent);
   white-space: nowrap;
   min-width: 5.5rem;
 }
 .cursor-history .val-amount {
   font-weight: 700;
-  color: var(--bwa-cream);
+  color: var(--bwa-text);
 }
 .cursor-history .val-note {
   font-size: 0.78rem;
@@ -48,7 +48,7 @@ transition: slide-left
   opacity: 0.75;
 }
 .cursor-history .highlight-row .val-amount {
-  color: var(--bwa-amber);
+  color: var(--bwa-accent);
   font-size: 0.95rem;
 }
 .cursor-img-wrap {
@@ -65,8 +65,8 @@ transition: slide-left
   width: auto;
   height: auto;
   border-radius: 10px;
-  border: 1px solid rgba(231, 162, 76, 0.18);
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--bwa-line);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 </style>
 
@@ -85,7 +85,7 @@ transition: slide-left
       <li>
         <span class="val-date">Early 2023</span>
         <span class="val-amount">Forked VS Code</span>
-        <span class="val-note">built AI layer on top of <a href="https://github.com/microsoft/vscode" target="_blank" style="color:var(--bwa-amber);">github.com/microsoft/vscode</a></span>
+        <span class="val-note">built AI layer on top of <a href="https://github.com/microsoft/vscode" target="_blank" style="color:var(--bwa-accent);">github.com/microsoft/vscode</a></span>
       </li>
       <li>
         <span class="val-date">Oct 2023</span>
@@ -95,7 +95,7 @@ transition: slide-left
       <li>
         <span class="val-date">GitHub</span>
         <span class="val-amount" style="font-weight:400;">github.com/cursor</span>
-        <span class="val-note"><a href="https://github.com/cursor" target="_blank" style="color:var(--bwa-amber);">plugins MIT · core editor proprietary</a></span>
+        <span class="val-note"><a href="https://github.com/cursor" target="_blank" style="color:var(--bwa-accent);">plugins MIT · core editor proprietary</a></span>
       </li>
       <li class="highlight-row">
         <span class="val-date">Jun 16, 2026</span>
