@@ -1,6 +1,6 @@
-# Build with AI
+[<img src="public/images/build-with-ai-hero.png" alt="Build with AI" width="100%">](https://cigar-ai-workshops.github.io/smoke-code-day-1/)
 
-> Live: [cigar-and-code.github.io/smoke-code-day-1](https://cigar-and-code.github.io/smoke-code-day-1/)
+# Build with AI
 
 ## AI Subscriptions
 
