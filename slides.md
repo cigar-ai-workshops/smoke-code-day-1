@@ -9,6 +9,10 @@ src: ./slides/01-cover.md
 ---
 
 ---
+src: ./slides/01b-ai-investment-link.md
+---
+
+---
 src: ./slides/02-time-horizon-llms.md
 ---
 

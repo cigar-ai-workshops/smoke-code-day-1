@@ -132,6 +132,22 @@ Open the dev server and present each link live.
 >
 > No credit card required. Prerequisite: knowledge of prompt engineering and basic software development experience.
 
+### Billions Spent, Hypothetical Returns — The Guardian
+
+> **Source:** [https://www.theguardian.com/technology/2026/jun/07/billions-spent-hypothetical-returns-the-ai-boom-explained-with-six-charts](https://www.theguardian.com/technology/2026/jun/07/billions-spent-hypothetical-returns-the-ai-boom-explained-with-six-charts)
+> **Publication:** The Guardian
+> **Published:** June 7, 2026
+>
+> Six charts explaining the AI boom — billions in investment vs. hypothetical returns.
+
+### AI Investment Boom — Reuters Graphics
+
+> **Source:** [https://www.reuters.com/graphics/USA-ECONOMY/AI-INVESTMENT/gkvlqbgxkpb/](https://www.reuters.com/graphics/USA-ECONOMY/AI-INVESTMENT/gkvlqbgxkpb/)
+> **Publication:** Reuters
+> **Type:** Interactive Graphics
+>
+> Visual deep-dive into AI investment trends across the US economy.
+
 ## Internships & Opportunities
 
 ### Anthropic — Claude Corps
