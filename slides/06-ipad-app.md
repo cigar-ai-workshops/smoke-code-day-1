@@ -5,9 +5,9 @@ transition: slide-left
 
 <div class="kicker">// built with ai · tablet</div>
 
-# The iPad App
+# Ipad Development
 
-<div class="shot">
+<div class="shot" style="height:78vh; margin-top:-8rem;">
   <img src="/images/ipad-app.png" />
   <div class="caption">Humidor companion: <em>iPad layout</em>, same codebase, native feel</div>
 </div>
